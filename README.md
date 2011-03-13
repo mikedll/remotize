@@ -16,7 +16,7 @@ Features:
 
 I used it across projects to spare myself having to rewrite the same old handlers.
 
-  $('#myform').remotize()
+    $('#myform').remotize()
 
 
 
