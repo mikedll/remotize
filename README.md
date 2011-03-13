@@ -9,10 +9,10 @@ put those in.
 
 Features:
 
-    - Disables form elements while ajax request is working
-    - Attributes get colored an error class onError
-    - The rails full messages get written into the form
-    - A hidden spinner will be revealed if you have embedded one in the form.
+  - Disables form elements while ajax request is working
+  - Attributes get colored an error class onError
+  - The rails full messages get written into the form
+  - A hidden spinner will be revealed if you have embedded one in the form.
 
 I used it across projects to spare myself having to rewrite the same old handlers.
 
