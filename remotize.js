@@ -18,14 +18,14 @@
 	               .bind('ajax:success', methods.onSuccess );
              
          },
-         onBeforeSend: function(xhr, settings) {
+         onBeforeSend: function(event, xhr, settings) {
              var data = $(this).data('remotize');
              $(this)
 	               .find('.' + data.spinnerClass ).show().end()
 	               .find(':input').disable().end();
              return true;
          },
-         onError: function(event, xhr, statusText) {
+         onError: function(event, xhr, statusText, errorThrown) {
              var data = $(this).data('remotize');
              var $this = $(this);
 
@@ -69,7 +69,7 @@
 	               .find(':input').enable().end()
 	               .find('.' + data.spinnerClass).hide().end();
          },
-         onSuccess: function(data, status, xhr) {
+         onSuccess: function(event, data, status, xhr) {
              var myData = $(this).data('remotize');
              $(this)
                  .find('.' + myData.spinnerClass).hide().end()
